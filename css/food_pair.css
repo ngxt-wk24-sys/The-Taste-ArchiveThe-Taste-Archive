@@ -1,0 +1,627 @@
+/* =========================================
+   1. FONTS IMPORT & GLOBAL RESETS
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Main Font: Spectral */
+    font-family: "Spectral", serif; 
+}
+
+body {
+    background-color: #a14e2d;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* BACKGROUND PATTERN */
+.pattern-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Ensure this path is correct for your project */
+    background-image: url('../images/backgroundOverlay.png');
+    background-repeat: repeat;
+    background-size: 500px;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* =========================================
+   2. NAVBAR (Font: Patua One)
+   ========================================= */
+.navbar {
+    background-color: #fff;
+    height: 80px;
+    padding: 0 24px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: flex-end;
+    font-family: "Patua One", serif; /* Navbar Font */
+}
+
+.navbar-brand img {
+    height: 90px;
+    margin-bottom: -10px;
+}
+
+.navbar .nav-link {
+    font-family: "Patua One", serif; /* Navbar Font */
+    font-weight: 400; /* Patua is naturally thick, so 400 is good */
+    color: #333;
+    padding-bottom: 8px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+.navbar .nav-link:hover {
+    color: #7a4a1f;
+}
+
+.navbar-toggler {
+    margin-bottom: 16px;
+}
+
+/* OFFCANVAS MOBILE MENU */
+.offcanvas {
+    background-color: #fff;
+    width: 350px !important;
+    max-width: 80% !important;
+}
+
+.offcanvas .nav-link {
+    font-family: "Patua One", serif;
+    font-size: 24px;
+    padding: 12px 0;
+    color: #000;
+}
+
+.offcanvas .nav-link:hover {
+    color: #7a4a1f;
+}
+
+.offcanvas .nav-link.active {
+    color: #4c6d3d;
+}
+
+.offcanvas-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-close {
+    font-size: 14px;
+}
+
+/* =========================================
+   3. HERO SECTION
+   ========================================= */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    filter: brightness(0.6);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 55%;
+}
+
+.hero-content h1 {
+    font-family: "Spectral", serif;
+    font-weight: 700;
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-family: "Spectral", serif;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* GLOBAL STICKER STYLING */
+.sticker {
+    filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+}
+
+.hover-effect {
+    transition: transform 0.4s ease;
+}
+
+.tilted-left {
+    transform: rotate(-8deg);
+}
+
+.tilted-right {
+    transform: rotate(5deg);
+}
+
+.hover-effect:hover {
+    transform: scale(1.08) rotate(0deg);
+}
+
+/* =========================================
+   4. SECTION 1: CLASSIC MORNING
+   ========================================= */
+.section-classic {
+    padding: 120px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.classic-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+}
+
+.classic-left {
+    position: relative;
+    width: 500px;
+}
+
+.css-bubble {
+    background-color: #FFDFA4;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.css-bubble h2 {
+    color: #333;
+    font-family: "Patua One", serif; /* Matching header style */
+    font-size: 58px;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.bubble-tail {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 90px solid #FFDFA4;
+    bottom: 110px;
+    right: -45px;
+    transform: rotate(25deg);
+}
+
+.bun-1 {
+    position: absolute;
+    width: 220px;
+    bottom: -20px;
+    left: -20px;
+    z-index: 10;
+}
+
+.classic-right {
+    position: relative;
+}
+
+.text-top-align {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    max-width: 300px;
+}
+
+.text-top-align p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: white;
+}
+
+.porridge-main {
+    width: 620px;
+}
+
+/* =========================================
+   5. SECTION 2: MORNING TRIO
+   ========================================= */
+.section-trio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+}
+
+.trio-container {
+    width: 90%;
+    max-width: 1600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.trio-img-side {
+    position: absolute;
+    left: -50px;
+    z-index: 5;
+}
+
+.trio-main-img {
+    width: 680px;
+}
+
+.green-box {
+    background: #4a6d3a;
+    width: 85%;
+    margin: 0 auto;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 12%;
+    position: relative;
+    z-index: 1;
+}
+
+.green-text {
+    max-width: 400px;
+}
+
+.green-text h2 {
+    font-family: "Patua One", serif;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+.green-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.bun-2 {
+    position: absolute;
+    width: 200px;
+    bottom: -70px;
+    right: 20%;
+    z-index: 10;
+}
+
+/* =========================================
+   6. SECTION 3: SWEET & SAVORY DUO
+   ========================================= */
+.section-sweet {
+    width: 100%;
+    padding: 100px 0 150px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sweet-outer-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sweet-text-zone {
+    position: relative;
+    margin-right: 150px;
+}
+
+.bun-3 {
+    position: absolute;
+    width: 200px;
+    top: -250px;
+    left: 150px;
+    z-index: 10;
+}
+
+.sweet-text-box h2 {
+    font-family: "Patua One", serif;
+    font-size: 65px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    color: white;
+    white-space: nowrap;
+}
+
+.sweet-text-box p {
+    font-size: 17px;
+    font-weight: 500;
+    max-width: 450px;
+    color: white;
+}
+
+.sweet-image-zone {
+    margin-right: -40px;
+}
+
+.sweet-main {
+    width: 580px;
+}
+
+/* FOOTER */
+footer {
+    background: #333333;
+    color: white;
+    height: 100px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copy {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-logo {
+    height: 50px;
+}
+
+/* =========================================
+   7. MOBILE RESPONSIVE (MAX-WIDTH: 720px)
+   ========================================= */
+@media screen and (max-width: 720px) {
+
+    /* HERO */
+    .hero { height: 450px !important; }
+    .hero-content h1 { font-size: 40px !important; }
+    .hero-content p { font-size: 16px !important; }
+
+    /* ---- SECTION 1: CLASSIC MORNING ---- */
+    .section-classic {
+        padding: 30px 0 80px 0 !important;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .classic-container {
+        display: block !important;
+        position: relative;
+        height: 600px;
+        width: 100%;
+    }
+
+    /* 1. Speech Bubble */
+    .classic-left {
+        position: absolute;
+        top: 20px;
+        left: 20px !important;
+        z-index: 20;
+        width: auto !important;
+    }
+
+    .css-bubble {
+        width: 250px !important;
+        height: 250px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important; 
+        padding-bottom: 20px !important;
+        z-index: 2;
+    }
+
+    .css-bubble h2 {
+        font-size: 34px !important;
+        text-align: center !important;
+        margin: 0 !important;
+        line-height: 1.1 !important;
+        position: relative;
+        z-index: 10; /* Text above tail */
+    }
+
+    /* Tail */
+    .bubble-tail {
+        display: block !important;
+        bottom: 35px !important;
+        right: -10px !important;
+        transform: rotate(45deg) !important;
+        z-index: 5;
+    }
+
+    /* 2. Paragraph Text */
+    .classic-right {
+        position: absolute;
+        top: 50px; 
+        left: 55% !important;
+        width: 42% !important;
+        z-index: 30;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .text-top-align {
+        position: static;
+        width: 100%;
+        max-width: none !important;
+        text-align: left !important;
+        margin: 0 !important;
+    }
+
+    .text-top-align p {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+        color: white !important;
+    }
+
+    /* 3. Small Bun Sticker */
+    .bun-1 {
+        display: block !important;
+        width: 100px !important;
+        position: absolute;
+        top: 190px !important;
+        left: 40px !important;
+        bottom: auto !important;
+        z-index: 25;
+    }
+
+    /* 4. Porridge Image */
+    .porridge-main {
+        position: absolute;
+        width: 125% !important;
+        max-width: 550px; 
+        top: 220px;
+        left: 45% !important;
+        transform: translateX(-50%) !important;
+        z-index: 10;
+        filter: drop-shadow(0 0 5px white);
+    }
+
+    /* ---- SECTION 2: MORNING TRIO ---- */
+    .section-trio {
+        padding: 0 !important;
+        margin-top: -50px;
+    }
+
+    .trio-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .trio-img-side {
+        position: relative !important;
+        margin-bottom: -120px;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .trio-main-img {
+        width: 110% !important;
+        max-width: 500px;
+        filter: drop-shadow(0 0 5px white);
+    }
+
+    .green-box {
+        width: 100% !important;
+        margin: 0 !important;
+        height: 400px !important;
+        display: block !important;
+        text-align: center;
+        padding-top: 160px !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .green-text {
+        padding-top: 40px !important;
+        margin: 0 auto;
+    }
+
+    .green-text h2 {
+        font-size: 38px !important;
+        text-align: center;
+    }
+
+    .green-text p {
+        text-align: center;
+        font-size: 16px !important;
+        margin-top: 20px;
+    }
+
+    .bun-2 {
+        width: 110px !important;
+        position: absolute;
+        bottom: 20px !important;
+        right: 20px !important;
+        top: auto !important;
+        z-index: 15;
+    }
+
+    /* ---- SECTION 3: SWEET & SAVORY ---- */
+    .section-sweet {
+        padding: 80px 0 50px 0 !important;
+        min-height: 550px;
+        overflow: hidden;
+    }
+
+    .sweet-outer-container {
+        display: block !important;
+        position: relative;
+        height: 500px;
+        width: 100%;
+    }
+
+    .sweet-text-zone {
+        width: 65% !important;
+        margin: 0 !important;
+        padding-left: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+
+    .sweet-text-box h2 {
+        font-size: 34px !important;
+        white-space: normal !important;
+        text-align: left;
+    }
+
+    .sweet-text-box p {
+        font-size: 15px !important;
+        width: 100% !important;
+        text-align: left;
+    }
+
+    .bun-3 {
+        width: 80px !important;
+        top: 120px !important;
+        left: 100px !important;
+        z-index: 4;
+    }
+
+    .sweet-image-zone {
+        position: absolute;
+        bottom: 0;
+        right: -40px;
+        margin: 0 !important;
+        z-index: 6;
+    }
+
+    .sweet-main {
+        width: 300px !important;
+        filter: drop-shadow(0 0 5px white);
+    }
+}

@@ -1,0 +1,538 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Global Font: Spectral */
+    font-family: "Spectral", serif;
+}
+
+body {
+    background-color: #a14e2d;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.pattern-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/backgroundOverlay.png');
+    background-repeat: repeat;
+    background-size: 550px;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* NAVBAR (Font: Patua One) */
+.navbar {
+    background-color: #fff;
+    height: 90px;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: flex-end;
+    font-family: "Patua One", serif; /* Font Change */
+}
+
+.navbar-brand img {
+    height: 90px;
+    margin-bottom: -10px;
+}
+
+.navbar .nav-link {
+    font-family: "Patua One", serif; /* Font Change */
+    font-weight: 400;
+    color: #333;
+    padding-bottom: 8px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.navbar .nav-link:hover {
+    color: #7a4a1f;
+}
+
+.navbar .nav-link.active {
+    color: #4c6d3d;
+}
+
+.navbar-toggler {
+    display: none;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* OFFCANVAS (Font: Patua One) */
+.offcanvas {
+    background-color: #fff;
+    width: 400px !important;
+    max-width: 80% !important;
+}
+
+.offcanvas .nav-link {
+    font-family: "Patua One", serif; /* Font Change */
+    font-size: 24px;
+    padding: 12px 0;
+    color: #000;
+}
+
+.offcanvas .nav-link:hover {
+    color: #7a4a1f;
+}
+
+.offcanvas .nav-link.active {
+    color: #4c6d3d;
+}
+
+.offcanvas-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-close {
+    font-size: 14px;
+}
+
+/* HERO SECTION */
+.hero-about {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 500px;
+    z-index: 5;
+}
+
+.hero-content h2 {
+    font-family: "Patua One", serif; /* Font Change */
+    font-size: 70px;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.sticker {
+    position: absolute;
+    filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-noodles {
+    width: 750px;
+    height: 750px;
+    right: -150px;
+    top: 0%;
+    z-index: 1;
+}
+
+.img-dumpling {
+    width: 380px;
+    height: 380px;
+    bottom: -150px;
+    right: 600px;
+    z-index: 2;
+}
+
+/* SHARE SECTION */
+.middle-share {
+    display: flex;
+    width: 100%;
+    min-height: 650px;
+    background-color: #5b7f3f;
+}
+
+.share-img-side {
+    width: 50%;
+    line-height: 0;
+}
+
+.share-img-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.share-text-side {
+    width: 50%;
+    background-color: #5b7f3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.share-content {
+    max-width: 600px;
+}
+
+.share-content h3 {
+    font-family: "Patua One", serif; /* Font Change */
+    font-size: 48px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+.share-content ul {
+    list-style: none;
+}
+
+.share-content li {
+    font-size: 19px; /* Slightly bumped for Spectral */
+    color: #ffffff;
+    margin-bottom: 18px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 25px;
+    font-weight: 400;
+}
+
+.share-content li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* QUOTE SECTION */
+.quote-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/About_us/kopi.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.quote-overlay p {
+    color: #ffffff;
+    font-size: 24px; /* Increased slightly for Spectral legibility */
+    line-height: 1.8;
+    text-align: center;
+    max-width: 950px;
+    font-weight: 500;
+    font-style: italic; /* Spectral looks great in italic for quotes */
+}
+
+/* FOOTER */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    height: 120px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 70px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+}
+
+/* =========================================================================== */
+/* MOBILE STYLES FOR 1080x1920 PORTRAIT */
+/* =========================================================================== */
+@media screen and (max-width: 1080px) {
+    .navbar-toggler {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .navbar-collapse {
+        display: none !important;
+    }
+
+    .navbar {
+        height: 140px !important;
+        padding: 0 40px !important;
+    }
+
+    .navbar-brand img {
+        height: 100px !important;
+        margin-bottom: -15px !important;
+    }
+
+    .offcanvas .nav-link {
+        font-size: 32px !important;
+        padding: 20px 0 !important;
+    }
+
+    .offcanvas-header {
+        padding: 30px !important;
+    }
+
+    .hero-about {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 60px 40px 40px !important;
+        display: block !important;
+        overflow: hidden !important;
+        position: relative !important;
+    }
+
+    .hero-content {
+        max-width: 70% !important;
+        position: relative !important;
+        z-index: 10 !important;
+        margin-bottom: 40px !important;
+    }
+
+    .hero-content h2 {
+        font-size: 70px !important;
+        margin-bottom: 40px !important;
+        line-height: 1.1 !important;
+        text-align: left !important;
+    }
+
+    .hero-content p {
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+        text-align: left !important;
+        max-width: 75% !important;
+    }
+
+    .hero-images-container {
+        position: absolute !important;
+        right: 0 !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 600px !important;
+        height: 800px !important;
+        z-index: 5 !important;
+        overflow: hidden !important;
+    }
+
+    .sticker {
+        position: absolute !important;
+        border-radius: 50% !important;
+        filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 25px rgba(255, 255, 255, 0.9)) !important;
+        object-fit: cover !important;
+    }
+
+    .img-noodles {
+        width: 550px !important;
+        height: 550px !important;
+        right: -230px !important;
+        top: 100px !important;
+        z-index: 1 !important;
+    }
+
+    .img-dumpling {
+        width: 140px !important;
+        height: 140px !important;
+        bottom: 80px !important;
+        right: 230px !important;
+        z-index: 2 !important;
+    }
+
+    .middle-share {
+        flex-direction: column !important;
+        min-height: auto !important;
+        padding: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .share-img-side {
+        width: 100% !important;
+        height: 400px !important;
+        order: 1 !important;
+    }
+
+    .share-img-side img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .share-text-side {
+        width: 100% !important;
+        padding: 50px 40px !important;
+        text-align: left !important;
+        justify-content: flex-start !important;
+        order: 2 !important;
+    }
+
+    .share-content {
+        max-width: 100% !important;
+    }
+
+    .share-content h3 {
+        font-size: 48px !important;
+        margin-bottom: 30px !important;
+        text-align: left !important;
+    }
+
+    .share-content ul {
+        text-align: left !important;
+        padding-left: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .share-content li {
+        font-size: 20px !important;
+        margin-bottom: 20px !important;
+        padding-left: 40px !important;
+        line-height: 1.4 !important;
+        text-align: left !important;
+    }
+
+    .share-content li::before {
+        font-size: 30px !important;
+        left: 5px !important;
+        top: 2px !important;
+    }
+
+    .quote-section {
+        height: 400px !important;
+        margin-top: 0 !important;
+    }
+
+    .quote-overlay {
+        padding: 0 40px !important;
+    }
+
+    .quote-overlay p {
+        font-size: 22px !important;
+        line-height: 1.5 !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        font-weight: normal !important;
+    }
+
+    /* Fixed Nested Media Query Issue Here */
+    footer {
+        height: 150px !important;
+        padding: 30px 40px !important;
+        margin-top: 0 !important;
+    }
+
+    .footer-container {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        text-align: left !important;
+        gap: 0 !important;
+    }
+
+    .footer-left {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+        text-align: left !important;
+        width: auto !important;
+    }
+
+    .footer-right {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        width: auto !important;
+    }
+
+    .footer-logo {
+        height: 70px !important;
+    }
+}
+
+@media screen and (max-width: 1080px) and (orientation: landscape) {
+    .navbar {
+        height: 100px !important;
+    }
+
+    .hero-about {
+        padding: 40px !important;
+    }
+
+    .hero-content h2 {
+        font-size: 60px !important;
+    }
+
+    .hero-content p {
+        font-size: 22px !important;
+        max-width: 60% !important;
+    }
+
+    .hero-images-container {
+        width: 500px !important;
+        height: 600px !important;
+    }
+
+    .img-noodles {
+        width: 450px !important;
+        height: 450px !important;
+        right: -80px !important;
+    }
+
+    .img-dumpling {
+        width: 220px !important;
+        height: 220px !important;
+        right: 200px !important;
+        bottom: -60px !important;
+    }
+}
