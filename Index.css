@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Patua+One&family=Playwrite+US+Trad+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Patua+One&family=Playwrite+US+Trad+Guides&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+.navbar {
+  z-index: 1000;
+  font-family: "Patua One", serif;
+  background-color: #fff;
+  height: 90px;
+  padding: 0 24px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: flex-end;
+}
+
+.navbar-brand img {
+  height: 90px;
+  margin-bottom: -10px;
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  color: #333;
+  padding-bottom: 8px;
+}
+
+.navbar .nav-link:hover {
+  color: #7a4a1f;
+}
+
+.navbar-toggler {
+  margin-bottom: 16px;
+}
+
+.content1{
+    background-color: #ad5527;
+    background-repeat: repeat; 
+    background-size: auto;
+  background-image: url('Images/pattern.png');
+}
+.section1 {
+  position: relative;
+  width: 300px;  
+  left: 12%;
+  margin-top: -6%;
+  z-index: 1;  
+}
+
+.img-base {
+  width: 300%;
+  display: block;
+}
+
+.img-top {
+  position: absolute;
+  top: 20%;
+  left: 170%;
+  width: 200%;
+  z-index: 2; 
+}
+
+.texttittle{
+  font-family: "Patua One", serif;
+  font-size: 70px;
+  text-align: center;
+  color: #fffbfb;
+  padding: 40px 0 0 0;
+}
+.reservation-container p {
+  font-family: "Spectral", serif;
+    padding: 10px 250px 60px 250px;  
+    line-height: 1.8;
+    font-size: 12px;
+    text-align: center; 
+    color: white; 
+}
+.section2{
+  padding: 10% 0;
+}
+.section3{
+    background-color: #fffbfb;
+}
+.texttittle1{
+  font-family: "Patua One", serif;
+  text-align: center;
+  color: #333232;
+  padding:120px 0 0 0;
+}
+.allbutton{
+    display:flex;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 20px;         
+    padding: 5% 0;   
+}
+.btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 0;
+  width: 100%;
+  height: 350px;
+
+  background-color: #fffbfb;
+  color:#333232;
+  font-family: "Patua One", serif;
+  text-decoration: none;
+
+  border-radius: 10px;
+  font-size: 15px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  font-family: "Patua One", serif;
+  background-color: #53753e;
+  color: #fffbfb;
+}
+
+.btn img {
+  width: 250px;
+  height: auto;
+}
+
+.btn p {
+  font-size: 18px;
+  color: #333;
+}
+
+.decoration {
+  position: relative;
+  height: 100vh;
+  background: #AD5527;
+  overflow: hidden;  
+  background-image: url('Images/pattern.png');
+}
+
+.bowl {
+  position: absolute;
+  width: 260px; 
+}
+
+.bowl-top-wrapper {
+  top: -226px;
+  left: 11%;
+  width: 45%;
+  animation-delay: 100.0s;
+}
+
+.bowl-top-wrapper .aos-animate{
+  transform: rotate(180deg) translateZ(0)!important;
+  
+}
+
+.bowl-left-wrapper {
+  left: -363px;
+  top: 25%;
+  width: 70%;
+  animation-delay: 105.0s;
+}
+
+.bowl-left-wrapper .aos-animate{
+  transform: rotate(180deg) translateZ(0)!important;
+}
+
+.bowl-right-wrapper {
+  right: -236px;
+  top: -15%;
+  width: 40%;
+  animation-delay: 110.0s;
+}
+
+.bowl-right-wrapper .aos-animate{
+  transform: rotate(180deg) translateZ(0)!important;
+}
+
+.bowl-bottom-wrapper {
+  bottom: -154px;
+  left: 43%;
+  width: 45%;
+  animation-delay: 115.0s;
+}
+
+.bowl-bottom-wrapper .aos-animate{
+  transform: rotate(350deg) translateZ(0)!important;
+}
+.text {
+  font-family: "Spectral", serif;
+  position: absolute;
+  padding-top: 23%;
+  padding-left: 25%;
+  padding-right: 25%;
+  
+  
+  text-align: center;
+  color: white; 
+  z-index: 99; 
+}
+
+.center-text p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+.footer {
+  font-family: "Patua One", serif;
+  background-color: #3a3a3a;
+  color: #f5f5f5;
+  height: 90px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer p {
+  margin: 0;
+  text-align: left;
+}
+
+.footer img {
+  height: 90px;
+  width: auto;
+}
+@media screen and (max-width:991px){
+.section1 {
+  position: relative;
+  width: 300px;  
+  left: 9%;
+  margin-top: -6%;
+  z-index: 1;  
+}
+  .img-base {
+  width: 200%;
+  display: block;
+}
+
+.img-top {
+  position: absolute;
+  top: 20%;
+  left: 120%;
+  width: 150%;
+  z-index: 2; 
+}
+.texttittle{
+  font-family: "Patua One", serif;
+  font-size: 50px;
+  text-align: center;
+  color: #fffbfb;
+  padding: 40px 0 0 0;
+}
+  .reservation-container p {
+  font-family: "Spectral", serif;
+    padding: 10px 220px 60px 220px;  
+    line-height: 1.8;
+    font-size: 12px;
+    text-align: center; 
+    color: white; 
+}
+  .section2{
+  padding: 10% 0;
+}
+.section3{
+    background-color: #fffbfb;
+}
+.texttittle1{
+  font-family: "Patua One", serif;
+  text-align: center;
+  color: #333232;
+  padding:120px 0 0 0;
+}
+.allbutton{
+    display:flex;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px;         
+    padding: 5% 0 5% 20%;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth; 
+  -webkit-overflow-scrolling: touch; 
+}
+  .btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 0;
+  width: 100%;
+  height: 350px;
+
+  background-color: #fffbfb;
+  color:#333232;
+  font-family: "Patua One", serif;
+  text-decoration: none;
+
+  border-radius: 10px;
+  font-size: 15px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  font-family: "Patua One", serif;
+  background-color: #53753e;
+  color: #fffbfb;
+}
+
+.btn img {
+  width: 250px;
+  height: auto;
+}
+
+.btn p {
+  font-size: 18px;
+  color: #333;
+}
+.decoration {
+  position: relative;
+  height: 75vh;
+  background: #AD5527;
+  overflow: hidden;  
+  background-image: url('Images/pattern.png');
+}
+
+.bowl {
+  position: absolute;
+  width: 260px; 
+}
+
+.bowl-top-wrapper {
+  top: -161px;
+  left: 11%;
+  width: 45%;
+  animation-delay: 100.0s;
+}
+
+.bowl-left-wrapper {
+  left: -263px;
+  top: 25%;
+  width: 70%;
+  animation-delay: 110.0s;
+}
+
+.bowl-right-wrapper {
+  right: -166px;
+  top: -12%;
+  width: 42%;
+  animation-delay: 115.0s;
+}
+
+.bowl-bottom-wrapper {
+  bottom: -113px;
+  left: 43%;
+  width: 45%;
+  animation-delay: 120.2s;
+}
+
+.text {
+  font-family: "Spectral", serif;
+  position: absolute;
+  padding-top: 23%;
+  padding-left: 25%;
+  padding-right: 25%;
+  
+  
+  text-align: center;
+  color: white; 
+  z-index: 99; 
+}
+
+.center-text p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+}
+@media  screen and(max-width:767px){
+  .section1 {
+  position: relative;
+  width: 300px;  
+  left: 7%;
+  margin-top: -6%;
+  z-index: 1;  
+}
+  .img-base {
+  width: 200%;
+  display: block;
+}
+
+.img-top {
+  position: absolute;
+  top: 20%;
+  left: 120%;
+  width: 150%;
+  z-index: 2; 
+}
+.texttittle{
+  font-family: "Patua One", serif;
+  font-size: 50px;
+  text-align: center;
+  color: #fffbfb;
+  padding: 40px 0 0 0;
+}
+  .reservation-container p {
+  font-family: "Spectral", serif;
+    padding: 10px 220px 60px 220px;  
+    line-height: 1.8;
+    font-size: 12px;
+    text-align: center; 
+    color: white; 
+}
+  .section2{
+  padding: 10% 0;
+}
+.section3{
+    background-color: #fffbfb;
+}
+.texttittle1{
+  font-family: "Patua One", serif;
+  text-align: center;
+  color: #333232;
+  padding:120px 0 0 0;
+}
+.allbutton{
+    display:flex;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px;         
+    padding: 5% 0 5% 20%;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth; 
+  -webkit-overflow-scrolling: touch; 
+}
+  .btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 0;
+  width: 100%;
+  height: 350px;
+
+  background-color: #fffbfb;
+  color:#333232;
+  font-family: "Patua One", serif;
+  text-decoration: none;
+
+  border-radius: 10px;
+  font-size: 15px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  font-family: "Patua One", serif;
+  background-color: #53753e;
+  color: #fffbfb;
+}
+
+.btn img {
+  width: 250px;
+  height: auto;
+}
+
+.btn p {
+  font-size: 18px;
+  color: #333;
+}
+.decoration {
+  position: relative;
+  height: 20vh;
+  background: #AD5527;
+  overflow: hidden;  
+  background-image: url('Images/pattern.png');
+}
+
+.bowl {
+  position: absolute;
+  width: 260px; 
+}
+
+.bowl-top-wrapper {
+  top: -161px;
+  left: 11%;
+  width: 40%;
+  animation-delay: 100.0s;
+}
+
+.bowl-left-wrapper {
+  left: -263px;
+  top: 25%;
+  width: 60%;
+  animation-delay: 110.0s;
+}
+
+.bowl-right-wrapper {
+  right: -241px;
+  top: -16%;
+  width: 55%;
+  animation-delay: 115.0s;
+}
+
+.bowl-bottom-wrapper {
+  bottom: 73px;
+  left: 43%;
+  width: 40%;
+  animation-delay: 120.2s;
+}
+
+.text {
+  font-family: "Spectral", serif;
+  position: absolute;
+  padding-top: 23%;
+  padding-left: 25%;
+  padding-right: 25%;
+  
+  
+  text-align: center;
+  color: white; 
+  z-index: 99; 
+}
+
+.center-text p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+}

@@ -1,0 +1,164 @@
+/* --- 全局与 Navbar --- */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #fff;
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 50px;
+}
+.navbar-brand img {
+    height: 90px;
+    margin-bottom: -10px;
+}
+.navbar .nav-link {
+    font-family: "Patua One", cursive;
+    font-size: 20px;
+    color: #333232;
+    padding-bottom: 8px;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background-color: #ad5527;
+    width: 100%;
+    min-height: 869px;
+    display: flex;
+    align-items: center;
+    background-image: url('IMAGE_RECIPE_SUBPAGE/wee_pattern.png');
+}
+.main-dish-img {
+    width: 670px;
+    height: 490px;
+    object-fit: contain;
+}
+.ingredients-card {
+    background-color: #fff;
+    width: 440px;
+    height: 563px;
+    padding: 40px;
+    border-radius: 20px;
+}
+.ingredients-card h2 {
+    font-family: "Patua One", cursive;
+    font-size: 36px;
+    color: #333232;
+    margin-top: 0;
+}
+.ingredients-card h3 {
+    font-family: "Spectral", serif;
+    font-size: 20px;
+    font-weight: 400; /* Spectral Regular */
+    margin-top: 20px;
+}
+.ingredients-card ul {
+    font-family: "Spectral", serif;
+    font-size: 18px;
+    list-style: none;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* --- Steps Section --- */
+.steps-section {
+    background-color: #ffdfa4;
+    padding: 100px 0;
+}
+.step-row {
+    margin-bottom: 120px;
+}
+
+/* 红线对齐设置 */
+.step-text {
+    padding: 0 40px;
+}
+.step-text h2 {
+    font-family: "Patua One", cursive;
+    font-size: 36px;
+    margin-top: 0; /* 对齐图片顶部关键 */
+    margin-bottom: 20px;
+}
+.step-text p {
+    font-family: "Spectral", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+}
+.step-img {
+    width: 555px;
+    height: 546px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+/* --- YouTube Video --- */
+.video-container {
+    max-width: 1128px;
+    width: 95%;
+    height: 632px;
+    margin-top: 50px;
+}
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* --- Footer (使用你提供的最新样式) --- */
+.footer-dark {
+    background-color: #262626; /* 背景深色 */
+    color: white;
+    width: 100%;
+    height: 108px; /* 统一高度 */
+    display: flex;
+    align-items: center;
+}
+.footer-inner {
+    width: 100%;
+    padding: 0 60px; /* 这里的 Padding 决定了左右靠边的程度 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-left {
+    font-family: "Patua One", cursive;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.4;
+}
+.footer-logo-img {
+    width: 97px;
+    height: 90px;
+    object-fit: contain;
+}
+
+/* --- 响应式 --- */
+@media (max-width: 1024px) {
+    .main-dish-img {
+        width: 100%;
+        height: auto;
+    }
+    .ingredients-card {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+    .step-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .footer-inner {
+        padding: 0 20px;
+    }
+}

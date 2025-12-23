@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFDFA4;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url('IMAGE/qhee_pattern6.png');
+}
+
+/* Navbar: 文字贴最右 */
+.navbar {
+    background-color: #fff;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 50px;
+}
+.nav-container-full {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.navbar-brand img {
+    height: 90px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+.nav-links li a {
+    text-decoration: none;
+    font-family: "Patua One", cursive;
+    color: #333232;
+    font-size: 18px;
+}
+
+/* 统一线条 #333232 */
+.line-1130,
+.grid-line {
+    width: 1130px;
+    border: none;
+    border-top: 2px solid #333232 !important;
+    margin: 0 auto;
+    opacity: 1;
+}
+.grid-line {
+    width: 100% !important;
+}
+
+/* 关键间距修正 */
+.top-story-section {
+    padding-top: 149px;
+} /* 青色格子上方 149 */
+
+.green-header-box {
+    background-color: #53753e;
+    width: 900px;
+    height: 189px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.green-header-box h1 {
+    font-family: "Spectral", serif;
+    font-size: 128px;
+    color: white;
+    margin: 0;
+}
+
+.spacer-49 {
+    padding-top: 49px;
+    padding-bottom: 175px;
+} /* 格子下到线 49, 线到下面 175 */
+
+.spacer-line-5 {
+    padding-top: 175px;
+    padding-bottom: 67px;
+} /* 线条5下方 67 */
+
+.spacer-normal {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* 内容容器 */
+.container-1130 {
+    width: 1130px;
+    margin: 0 auto;
+}
+.intro-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.intro-left-text {
+    width: 500px;
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title-zhajiang {
+    font-family: "Patua One", cursive;
+    font-size: 50px;
+    color: #333232;
+    margin: 0;
+}
+.origin-p {
+    font-family: "Patua One", cursive;
+    font-size: 40px;
+    line-height: 1.1;
+    color: #333232;
+    margin: 0;
+}
+.highlight {
+    color: #ad5527;
+}
+.noodle-img {
+    width: 574px;
+    height: 404px;
+    object-fit: contain;
+}
+
+.banner-img {
+    width: 1130px;
+    height: 458px;
+    object-fit: cover;
+}
+.article-content {
+    width: 1130px;
+    margin: 50px auto 100px auto;
+    font-family: "Spectral", serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+    color: #333232;
+}
+
+/* Location */
+.location-title {
+    font-family: "Spectral", serif;
+    font-size: 70px;
+    color: #333232;
+}
+.location-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 120px;
+}
+.info-area {
+    width: 500px;
+}
+.info-area p {
+    font-family: "Spectral", serif;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #333232;
+}
+
+/* Footer: 108px 高, Logo 97x90 */
+.footer-dark {
+    background-color: #262626;
+    color: white;
+    width: 100%;
+    height: 108px;
+    display: flex;
+    align-items: center;
+}
+.footer-inner {
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-left {
+    font-family: "Patua One", cursive;
+    font-size: 18px;
+    text-align: left;
+}
+.footer-logo-img {
+    width: 97px;
+    height: 90px;
+    object-fit: contain;
+}

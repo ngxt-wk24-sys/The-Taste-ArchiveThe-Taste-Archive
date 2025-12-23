@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <!-- Add Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/about_us.css" />
+</head>
+
+<body>
+  <!-- Background Pattern Overlay -->
+  <div class="pattern-overlay"></div>
+
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white px-4">
+            <div class="navbar-brand">
+                <img src="image/logo-01.png" alt="logo" />
+            </div>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="Homepage.html">Home</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="Storypage.html">Story</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="recipe%20page.html">Recipe</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="foodpair2.html">Food Pairings</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+  <!-- Mobile Menu Offcanvas - ONLY ONE! -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Story</a></li>
+        <li class="nav-item"><a class="nav-link" href="recipe page.html">Recipe</a></li>
+        <li class="nav-item"><a class="nav-link" href="food_pair.html">Food Pairings</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about_us.html">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- SECTION 1: ABOUT US HERO (FULL PAGE) -->
+    <section class="hero-about">
+      <div class="hero-content">
+        <h2>About Us</h2>
+        <p>
+          We are a group of enthusiasts who love traditional, nostalgic flavors — the kind that bring back memories of
+          another time. As many classic snacks, old shops, and traditional cooking methods gradually fade away, we
+          created this website to help more people discover and appreciate these foods that carry so many stories.
+        </p>
+      </div>
+
+      <!-- Sticker Images with specific positioning -->
+      <div class="hero-images-container">
+        <img src="images/About_us/noodle.png" class="sticker img-noodles" alt="Noodles">
+        <img src="images/About_us/dumpling.png" class="sticker img-dumpling" alt="Dumplings">
+      </div>
+    </section>
+
+    <!-- SECTION 2: HERE, WE SHARE -->
+    <section class="middle-share">
+      <div class="share-img-side">
+        <!-- Using the steamer image from your folder -->
+        <img src="images/About_us/steamer.png" alt="Traditional Dim Sum Steamers">
+      </div>
+      <div class="share-text-side">
+        <div class="share-content">
+          <h3>Here, we share</h3>
+          <ul>
+            <li>The origins and history of traditional dishes</li>
+            <li>Regional variations of classic snacks</li>
+            <li>Authentic flavors remembered by the older generations</li>
+            <li>Family recipes or time-honored cooking methods from old eateries</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: MISSION STATEMENT -->
+    <section class="quote-section">
+      <div class="quote-overlay">
+        <p>
+          We are not a commercial team or a food company. We simply want to document and preserve the precious culinary
+          traditions that shaped our culture. We hope that everyone who visits this site can rediscover those
+          unforgettable tastes — and help keep the spirit of traditional cuisine alive.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        Created by The Taste Archive<br>
+        COPYRIGHT 2025 © The Taste Archive
+      </div>
+      <div class="footer-right">
+        <img src="image/logo-01.png" alt="Logo" class="footer-logo">
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
